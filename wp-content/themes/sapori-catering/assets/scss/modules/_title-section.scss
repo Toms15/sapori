@@ -1,0 +1,40 @@
+.title--section {
+	font-family: $lora;
+	color: $black;
+	text-align: center;
+	font-size: 1.25rem;
+	line-height: 1.8rem;
+	width: 100%;
+	max-width: 500px;
+	margin: 2rem auto;
+	&.is--green {
+		color: $green;
+	}
+	&.is--white {
+		color: $white;
+	}
+	&.is--gray {
+		color: $gray;
+	}
+	&.is--black {
+		color: $black;
+	}
+	&.is--pink {
+		color: $pink;
+	}
+}
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {}
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+	.title--section {
+		font-size: 1.75rem;
+		line-height: 2.5rem;
+	}
+}
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+	.title--section {
+		max-width: 750px;
+	}
+}

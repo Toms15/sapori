@@ -1,0 +1,29 @@
+section.section__content--divider {
+	height: 1px;
+	background-color: $black;
+	width: 100%;
+	&.is--green {
+		background-color: $green;
+	}
+	&.is--pink {
+		background-color: $pink;
+	}
+	&.is--black {
+		background-color: $black;
+	}
+	&.is--gray {
+		background-color: $gray;
+	}
+	&.is--light-gray {
+		background-color: $light-gray;
+	}
+	&.is--white {
+		background-color: $white;
+	}
+}
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {}
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {}
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {}

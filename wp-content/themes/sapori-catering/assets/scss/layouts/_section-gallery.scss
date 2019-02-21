@@ -1,0 +1,17 @@
+section.section__content--gallery {
+	padding: 3rem 1rem;
+	z-index: 1;
+}
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {}
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+	section.section__content--gallery {
+		padding: 5rem 2rem;
+	}
+}
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+	section.section__content--gallery {
+	}
+}

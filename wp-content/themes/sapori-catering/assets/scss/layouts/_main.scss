@@ -1,0 +1,12 @@
+section.section__content {
+	position: relative;
+	&:first-of-type {
+		margin-top: 0 !important;
+	}
+}
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {}
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {}
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {}

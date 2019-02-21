@@ -1,0 +1,54 @@
+.mobile-navigation {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 100%;
+	div {
+		width: 100%;
+		ul {
+			width: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+			li {
+				list-style-type: none;
+				min-height: 50px;
+				max-height: 50px;
+				height: 50px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				&.current_page_item {
+					a {
+						color: $green;
+					}
+				}
+				a {
+					width: auto;
+					padding: 0 1rem;
+					font-family: $open-sans;
+					text-transform: uppercase;
+					color: $black;
+					font-size: .9rem;
+					letter-spacing: .1rem;
+					cursor: pointer;
+					&:hover {
+						color: $green;
+					}
+				}
+			}
+		}
+	}
+}
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {}
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+	.mobile-navigation {
+		display: none;
+	}
+}
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {}

@@ -1,0 +1,55 @@
+.hamburger__menu {
+	width: 50px;
+	height: 50px;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	flex-direction: column;
+	cursor: pointer;
+	.line {
+		width: 18px;
+		height: 2px;
+		background-color: $green;
+		transition: all 500ms cubic-bezier(.645, .045, .355, 1);
+		&:nth-of-type(2) {
+			margin: 5px 0;
+			transition: all 500ms cubic-bezier(.645, .045, .355, 1);
+		}
+	}
+	&:hover {
+		.line {
+			&:nth-of-type(2) {
+				width: 25px;
+				transition: all 500ms cubic-bezier(.645, .045, .355, 1);
+			}
+		}
+	}
+	&.shrink {
+		.line {
+			height: 1px;
+			transition: all 500ms cubic-bezier(.645, .045, .355, 1);
+			&:nth-of-type(2) {
+				margin: 0;
+				transition: all 500ms cubic-bezier(.645, .045, .355, 1);
+			}
+		}
+		&:hover {
+			.line {
+				&:nth-of-type(2) {
+					width: 18px;
+					transition: all 500ms cubic-bezier(.645, .045, .355, 1);
+				}
+			}
+		}		
+	}
+}
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {}
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+	.hamburger__menu {
+		display: none;
+	}
+}
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {}

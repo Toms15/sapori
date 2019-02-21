@@ -1,0 +1,26 @@
+.header--fixed {
+	box-shadow: 0px 0px 10px $light-gray;
+	position: fixed;
+	z-index: 999;
+	background-color: $white;
+	display: none;
+	left: 0;
+	right: 0;
+	top: -100px;
+	transition: all 200ms cubic-bezier(.645, .045, .355, 1);
+	&.is--show {
+		top: 0;
+		transition: all 200ms cubic-bezier(.645, .045, .355, 1);
+	}
+}
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {}
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+	.header--fixed {
+		display: block;
+	}
+}
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+}

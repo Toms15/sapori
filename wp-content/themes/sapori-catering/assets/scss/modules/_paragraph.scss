@@ -1,0 +1,42 @@
+.paragraph {
+	font-family: $open-sans;
+	font-weight: 300;
+	font-size: .8rem;
+	line-height: 1.5rem;
+	text-align: center;
+	width: 100%;
+	max-width: 500px;
+	margin: 1rem auto 0;
+	p {
+		margin-bottom: 1rem;
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+		a {
+			color: $green;
+			padding-bottom: .15rem;
+			&:hover {
+				border-bottom: 1px solid $green;
+			}
+		}
+	}
+	&.w-90 {
+		width: 80%;
+	}
+}
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {}
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+	.paragraph {
+		font-size: .9rem;
+		margin: 2rem auto 0;
+	}
+}
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+	.paragraph {
+		max-width: 650px;
+		font-size: 1rem;
+	}
+}
