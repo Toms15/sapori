@@ -37,7 +37,9 @@
 										<?php foreach( $images as $image ): ?>
 											<div class="large-2 medium-4 small-12 column">
 												<a href="<?php echo $image['url']; ?>">
-													<div class="single__gallery" style="background: url(<?php echo $image['url']; ?>) no-repeat center center;"></div>
+													<div class="single__gallery">
+														<div class="single__gallery--image" style="background: url(<?php echo $image['url']; ?>) no-repeat center center;"></div>
+													</div>
 												</a>
 											</div>
 										<?php endforeach; ?>
