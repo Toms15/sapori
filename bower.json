@@ -20,7 +20,8 @@
     "font-awesome": "fontawesome#^4.7.0",
     "swiper": "^4.0.7",
     "masonry": "^4.2.0",
-    "magnific-popup": "^1.1.0"
+    "magnific-popup": "^1.1.0",
+    "jquery.cookiebar": "^1.2.1"
   },
   "overrides": {
     "bootstrap": {

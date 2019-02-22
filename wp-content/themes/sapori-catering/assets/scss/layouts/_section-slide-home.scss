@@ -1,6 +1,6 @@
 #swiper--home {
 	width: 100vw;
-	height: calc(100vh - 100px);
+	height: calc(85vh - 100px);
 	background-color: $light-gray;
 	.swiper-wrapper {
 		width: 100%;
@@ -29,7 +29,7 @@
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
 	#swiper--home {
-		height: calc(100vh - 200px);
+		height: calc(85vh - 200px);
 		.swiper-button-prev {
 			background-size: 22px;
 		}
@@ -41,6 +41,6 @@
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
 	#swiper--home {
-		height: calc(100vh - 250px);
+		height: calc(85vh - 250px);
 	}
 }

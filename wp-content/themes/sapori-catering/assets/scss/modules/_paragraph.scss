@@ -1,12 +1,36 @@
 .paragraph {
 	font-family: $open-sans;
 	font-weight: 300;
-	font-size: .8rem;
+	font-size: .95rem;
 	line-height: 1.5rem;
 	text-align: center;
 	width: 100%;
 	max-width: 500px;
 	margin: 1rem auto 0;
+	&.only--text {
+		p {
+			a {
+				font-weight: 400;
+			}
+			strong {
+				display: inline-block;
+			}
+		}
+		strong {
+			font-family: $lora;
+			font-weight: normal;
+			margin-bottom: .5rem;
+			display: block;
+			font-size: 1.1rem;
+		}
+		ul, ol {
+			margin: 0 0 1rem 2rem;
+			padding: 0;
+			li {
+				margin-bottom: .5rem;
+			}
+		}
+	}
 	p {
 		margin-bottom: 1rem;
 		&:last-of-type {
@@ -38,5 +62,9 @@
 	.paragraph {
 		max-width: 650px;
 		font-size: 1rem;
+		&.only--text {
+			max-width: 100%;
+			text-align: left;
+		}
 	}
 }

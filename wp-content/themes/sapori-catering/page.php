@@ -48,6 +48,9 @@ get_header();
 					elseif(get_row_layout() == 'preventivo'):
 						get_template_part( 'section/content', 'quotation' );
 						wp_reset_postdata();
+					elseif(get_row_layout() == 'informativa'):
+						get_template_part( 'section/content', 'information' );
+						wp_reset_postdata();
 					endif;
 				endwhile;
 			else :

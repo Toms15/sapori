@@ -67,11 +67,21 @@
 				</div>
 			</div>
 		</div>
+		<div class="grid-container">
+			<div class="grid-x">
+				<div class="large-12 medium-12 small-12 column">
+					<div class="copyright">
+						<p>
+							© 2019. Tutti i diritti riservati. P.IVA 12155211001 - <a href="/cookie">Cookie</a> - <a href="/privacy">Privacy Policy</a> - An happy artwork by <a href="//www.officine06.com" rel="nofollow">Officine06</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
 <!-- Custom JS/jQuery -->
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAx9KUDj1tNjrnOjWivzS4GAJ9Cke8RIvM"></script>
 <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/vendor.js"></script>
 <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/main.js"></script>
 <?php wp_footer(); ?>

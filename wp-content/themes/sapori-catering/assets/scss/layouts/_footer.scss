@@ -45,6 +45,23 @@ footer {
 			}
 		}
 	}
+	.copyright {
+		text-align: center;
+		p {
+			margin: .75rem 0;
+			color: $white;
+			font-family: $lora;
+			font-size: .8rem;
+			line-height: 1.8rem;
+			a {
+				padding-bottom: .15rem;
+				&:hover {
+					color: $black;
+					border-bottom: 1px solid $black;
+				}
+			}
+		}
+	}
 }
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {

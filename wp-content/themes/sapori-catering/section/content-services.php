@@ -35,7 +35,8 @@ $view = get_sub_field('visualizzazione');
 				<div class="large-6 medium-6 small-12 column">
 					<?php if($gallery == 1): ?>
 						<a href="#gallery-<?php echo $slug; ?>">
-							<div class="single__service open--gallery <?php if($text): ?>has--text<?php endif; ?>" style="background: url(<?php echo $image['url']; ?>) no-repeat center center;">
+							<div class="single__service open--gallery <?php if($text): ?>has--text<?php endif; ?>">
+								<div class="single__service--image" style="background: url(<?php echo $image['url']; ?>) no-repeat center center;"></div>
 								<h2><?php echo $name; ?></h2>
 							</div>
 							<?php if($text): ?>
@@ -55,6 +56,8 @@ $view = get_sub_field('visualizzazione');
 					<?php else: ?>
 						<a href="<?php echo $link; ?>">
 							<div class="single__service <?php if($text): ?>has--text<?php endif; ?>" style="background: url(<?php echo $image['url']; ?>) no-repeat center center;">
+							<div class="single__service <?php if($text): ?>has--text<?php endif; ?>">
+								<div class="single__service--image" style="background: url(<?php echo $image['url']; ?>) no-repeat center center;"></div>
 								<h2><?php echo $name; ?></h2>
 							</div>
 							<?php if($text): ?>
@@ -69,7 +72,8 @@ $view = get_sub_field('visualizzazione');
 				<div class="large-4 medium-4 small-12 column">
 					<?php if($gallery == 1): ?>
 						<a href="#gallery-<?php echo $slug; ?>">
-							<div class="single__service open--gallery <?php if($text): ?>has--text<?php endif; ?>" style="background: url(<?php echo $image['url']; ?>) no-repeat center center;">
+							<div class="single__service open--gallery <?php if($text): ?>has--text<?php endif; ?>">
+								<div class="single__service--image" style="background: url(<?php echo $image['url']; ?>) no-repeat center center;"></div>
 								<h2><?php echo $name; ?></h2>
 							</div>
 							<?php if($text): ?>
@@ -88,7 +92,8 @@ $view = get_sub_field('visualizzazione');
 						<?php endif; ?>
 					<?php else: ?>
 						<a href="<?php echo $link; ?>">
-							<div class="single__service <?php if($text): ?>has--text<?php endif; ?>" style="background: url(<?php echo $image['url']; ?>) no-repeat center center;">
+							<div class="single__service <?php if($text): ?>has--text<?php endif; ?>">
+								<div class="single__service--image" style="background: url(<?php echo $image['url']; ?>) no-repeat center center;"></div>
 								<h2><?php echo $name; ?></h2>
 							</div>
 							<?php if($text): ?>
@@ -103,7 +108,8 @@ $view = get_sub_field('visualizzazione');
 				<div class="large-3 medium-3 small-12 column">
 					<?php if($gallery == 1): ?>
 						<a href="#gallery-<?php echo $slug; ?>">
-							<div class="single__service open--gallery <?php if($text): ?>has--text<?php endif; ?>" style="background: url(<?php echo $image['url']; ?>) no-repeat center center;">
+							<div class="single__service open--gallery <?php if($text): ?>has--text<?php endif; ?>">
+								<div class="single__service--image" style="background: url(<?php echo $image['url']; ?>) no-repeat center center;"></div>
 								<h2><?php echo $name; ?></h2>
 							</div>
 							<?php if($text): ?>
@@ -122,7 +128,8 @@ $view = get_sub_field('visualizzazione');
 						<?php endif; ?>
 					<?php else: ?>
 						<a href="<?php echo $link; ?>">
-							<div class="single__service <?php if($text): ?>has--text<?php endif; ?>" style="background: url(<?php echo $image['url']; ?>) no-repeat center center;">
+							<div class="single__service <?php if($text): ?>has--text<?php endif; ?>">
+								<div class="single__service--image" style="background: url(<?php echo $image['url']; ?>) no-repeat center center;"></div>
 								<h2><?php echo $name; ?></h2>
 							</div>
 							<?php if($text): ?>
@@ -144,7 +151,8 @@ $view = get_sub_field('visualizzazione');
 				?>
 				<div class="large-12 medium-12 small-12 column">
 					<a href="<?php echo $link; ?>">
-						<div class="single__service single__service--fullwidth" style="background: url(<?php echo $image['url']; ?>) no-repeat center center;">
+						<div class="single__service single__service--fullwidth">
+							<div class="single__service--image" style="background: url(<?php echo $image['url']; ?>) no-repeat center center;"></div>
 							<h2><?php echo $name; ?></h2>
 						</div>
 					</a>
