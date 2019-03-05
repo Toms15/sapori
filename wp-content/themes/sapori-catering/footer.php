@@ -33,11 +33,13 @@
 						<a href="tel:+3906.72394222">
 							+39 06.72394222
 						</a>
-					</p>
-					<p>
-						Via Michele Migliarini, 44
 						<br>
-						00173 Roma - IT
+						<i class="fas fa-envelope"></i>
+						<a href="mailto:info@saporicatering.it">
+							info@saporicatering.it
+						</a>
+						<br>
+						<br>
 					</p>
 				</div>
 			</div>
