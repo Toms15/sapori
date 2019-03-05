@@ -3,7 +3,7 @@
 	height: 100px;
 }
 header {
-	background-color: $white;
+	background-color: $green;
 	height: 100px;
 	display: flex;
 	align-items: center;
@@ -12,7 +12,7 @@ header {
 	position: fixed;
 	width: 100%;
 	z-index: 999;
-	box-shadow: 0px 0px 10px $light-gray;
+	// box-shadow: 0px 0px 10px $light-gray;
 	.logo {
 		width: 175px;
 		height: auto;

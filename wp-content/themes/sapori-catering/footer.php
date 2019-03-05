@@ -17,7 +17,7 @@
 		<div class="grid-x">
 			<div class="large-3 medium-3 small-12 column">
 				<div class="single__column">
-					<img src="<?php echo get_template_directory_uri() . '/images/Sapori-Catering-Logo-white.png'?>" alt="Sapori Catering">
+					<img src="<?php echo get_template_directory_uri() . '/images/Sapori-Catering-Logo.png'?>" alt="Sapori Catering">
 				</div>
 			</div>
 			<div class="large-3 medium-3 small-12 column">
