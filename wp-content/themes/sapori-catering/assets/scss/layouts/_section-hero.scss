@@ -38,6 +38,26 @@ section.section__content--hero {
 		background-color: $green !important;
 		padding: 0;
 	}
+	&.only-color--gray {
+		height: 50px;
+		background-color: $gray !important;
+		padding: 0;
+	}
+	&.only-color--pink {
+		height: 50px;
+		background-color: $pink !important;
+		padding: 0;
+	}
+	&.only-color--white {
+		height: 50px;
+		background-color: $white !important;
+		padding: 0;
+	}
+	&.only-color--black {
+		height: 50px;
+		background-color: $black !important;
+		padding: 0;
+	}
 }
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {}
