@@ -59,10 +59,10 @@
 				<div class="single__column">
 					<h3>Follow us</h3>
 					<div class="social">
-						<a href="">
+						<a href="https://www.facebook.com/saporicateringroma/" target="_blank">
 							<i class="fab fa-facebook"></i>
 						</a>
-						<a href="">
+						<a href="https://www.instagram.com/saporicatering/" target="_blank">
 							<i class="fab fa-instagram"></i>
 						</a>
 					</div>
