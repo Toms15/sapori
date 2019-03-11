@@ -10,6 +10,7 @@
 $title = get_sub_field('titolo');
 $color_title = get_sub_field('colore_titolo');
 $logos = get_sub_field('logo_clienti');
+$type = get_sub_field('tipologia');
 ?>
 
 <!-- Section Clients -->
@@ -19,46 +20,27 @@ $logos = get_sub_field('logo_clienti');
 	</div>
 	<?php if($logos): ?>
 	<div class="grid-x">
-		<?php foreach( $logos as $image ): ?>
-		<div class="large-2 medium-4 small-12 column">
-			<div class="single__client">
-				<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
+		<?php if($type == 'slider'): ?>
+			<div class="swiper-container" id="client--gallery">
+				<div class="swiper-wrapper">
+					<?php foreach( $logos as $image ): ?>
+						<div class="swiper-slide">
+							<div class="single__client">
+								<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
+							</div>
+						</div>
+					<?php endforeach; ?>
+				</div>
 			</div>
-		</div>
-		<?php endforeach; ?>
+		<?php else: ?>
+			<?php foreach( $logos as $image ): ?>
+			<div class="large-2 medium-4 small-12 column">
+				<div class="single__client">
+					<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
+				</div>
+			</div>
+			<?php endforeach; ?>
+		<?php endif; ?>
 	</div>
-	<?php else: ?>
-		<div class="grid-x">
-			<div class="large-2 medium-4 small-12 column">
-				<div class="single__client">
-					<img src="//placehold.it/300x150" alt="">
-				</div>
-			</div>
-			<div class="large-2 medium-4 small-12 column">
-				<div class="single__client">
-					<img src="//placehold.it/300x150" alt="">
-				</div>
-			</div>
-			<div class="large-2 medium-4 small-12 column">
-				<div class="single__client">
-					<img src="//placehold.it/300x150" alt="">
-				</div>
-			</div>
-			<div class="large-2 medium-4 small-12 column">
-				<div class="single__client">
-					<img src="//placehold.it/300x150" alt="">
-				</div>
-			</div>
-			<div class="large-2 medium-4 small-12 column">
-				<div class="single__client">
-					<img src="//placehold.it/300x150" alt="">
-				</div>
-			</div>
-			<div class="large-2 medium-4 small-12 column">
-				<div class="single__client">
-					<img src="//placehold.it/300x150" alt="">
-				</div>
-			</div>
-		</div>
 	<?php endif; ?>
 </section>

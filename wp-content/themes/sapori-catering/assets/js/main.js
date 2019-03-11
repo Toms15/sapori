@@ -106,6 +106,39 @@ jQuery(document).ready(function(){
       }
     });
   }
+  if(jQuery('#client--gallery').length) {
+    var homeHero = new Swiper('#client--gallery', {
+      speed: 800,
+      loop: true,
+      autoplay: {
+        delay: 3500,
+        disableOnInteraction: false,
+      },
+      breakpointsInverse: true,
+      breakpoints: {
+        // when window width is >= 320px
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 10
+        },
+        // when window width is >= 768px
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 10
+        },
+        // when window width is >= 992px
+        992: {
+          slidesPerView: 4,
+          spaceBetween: 10
+        },
+        // when window width is >= 1200px
+        1200: {
+          slidesPerView: 6,
+          spaceBetween: 10
+        }
+      }
+    });
+  }
 
   // ----------------------------------------
   // Magnific Pop-up
